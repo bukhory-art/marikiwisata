@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariki Wisata - Rental Kendaraan Premium Makassar</title>
+    <meta name="description"
+        content="Mariki Wisata - Jasa rental kendaraan terpercaya di Makassar. Nikmati perjalanan nyaman dengan armada berkualitas.">
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Memuat...</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="main-nav">
+        <div class="nav-logo">
+            <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata" width="160px">
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.php" class="nav-login">Login</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-decorative-elements">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="hero-text">
+            <span class="hero-badge">✦ Rental Kendaraan Terpercaya di Makassar</span>
+            <h1>Jelajahi Makassar<br>Dengan <span class="highlight">Mariki Wisata</span></h1>
+            <p>Nikmati kenyamanan perjalanan dengan armada berkualitas tinggi dan pelayanan profesional yang siap
+                melayani Anda 24/7</p>
+            <div class="hero-buttons">
+                <a href="catalog.html" class="btn-primary">
+                    <span>🚗 Lihat Armada</span>
+                </a>
+                <a href="contact.html" class="btn-secondary">
+                    <span>💬 Hubungi Kami</span>
+                </a>
+            </div>
+        </div>
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+            <div class="hero-stat-item">
+                <div class="hero-stat-num" data-target="5">0</div>
+                <div class="hero-stat-label">Tahun Pengalaman</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+                <div class="hero-stat-num" data-target="10">0</div>
+                <div class="hero-stat-label">Armada Kendaraan</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+                <div class="hero-stat-num" data-target="500">0</div>
+                <div class="hero-stat-label">Pelanggan Puas</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+                <div class="hero-stat-num" data-target="100">0</div>
+                <div class="hero-stat-label">Destinasi Terlayani</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Fleet -->
+    <section class="fleet-section">
+        <div class="section-header">
+            <span class="section-badge">Armada Unggulan</span>
+            <h2>Pilihan Kendaraan Terbaik</h2>
+            <p>Temukan kendaraan yang tepat untuk setiap kebutuhan perjalanan Anda</p>
+        </div>
+        <div class="card-container">
+            <div class="card reveal">
+                <div class="card-image">
+                    <img src="Jepretan-Layar-2024-08-02-pukul-13.40.47-1030x609.png" alt="Innova">
+                    <span class="card-tag">Populer</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Innova</div>
+                    <div class="card-description">Nikmati perjalanan yang nyaman dengan harga yang terjangkau. Cocok
+                        untuk keluarga.</div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span>
+                        <span>❄️ AC</span>
+                        <span>⛽ Include BBM</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="card-image">
+                    <img src="hiace.jpg" alt="Hiace">
+                    <span class="card-tag tag-group">Grup</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota HiAce</div>
+                    <div class="card-description">Kapasitas besar, lebih nyaman, dan lebih nikmat untuk perjalanan
+                        kelompok.</div>
+                    <div class="card-features">
+                        <span>👥 14 Kursi</span>
+                        <span>❄️ AC</span>
+                        <span>🗺️ Sopir</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="card-image">
+                    <img src="fortuner.jpg" alt="Fortuner">
+                    <span class="card-tag tag-suv">SUV</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Fortuner</div>
+                    <div class="card-description">Siap melewati segala jenis medan dengan kemampuan luar biasa di setiap
+                        rute.</div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span>
+                        <span>❄️ AC</span>
+                        <span>🛡️ Asuransi</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="card-image">
+                    <img src="pajero.jpg" alt="Pajero">
+                    <span class="card-tag tag-suv">SUV</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Mitsubishi Pajero</div>
+                    <div class="card-description">Melewati segala jenis medan dengan kenyamanan dan keanggunan premium.
+                    </div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span>
+                        <span>❄️ AC</span>
+                        <span>🛡️ Asuransi</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="card-image">
+                    <img src="alphard.jpg" alt="Alphard">
+                    <span class="card-tag tag-premium">Premium</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Alphard</div>
+                    <div class="card-description">Nikmati kenyamanan dan kemewahan premium di setiap perjalanan Anda.
+                    </div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span>
+                        <span>❄️ AC Dual</span>
+                        <span>⭐ VIP</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta">
+            <a href="catalog.html" class="btn-see-all">Lihat Semua Armada →</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="section-header">
+            <span class="section-badge">Layanan Kami</span>
+            <h2>Solusi Transportasi Lengkap</h2>
+            <p>Layanan profesional untuk setiap kebutuhan perjalanan Anda</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon-wrap">
+                    <div class="service-icon">✈️</div>
+                </div>
+                <h3>Antar Jemput Bandara</h3>
+                <p>Layanan terencana untuk jemputan atau antaran ke Bandara Sultan Hasanuddin tepat waktu.</p>
+                <a href="contact.html" class="service-link">Pesan →</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon-wrap">
+                    <div class="service-icon">🏙️</div>
+                </div>
+                <h3>City Tour Makassar</h3>
+                <p>Eksplorasi keindahan kota Makassar dan sekitarnya dengan sopir yang berpengalaman.</p>
+                <a href="contact.html" class="service-link">Pesan →</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon-wrap">
+                    <div class="service-icon">💍</div>
+                </div>
+                <h3>Wedding Car</h3>
+                <p>Sewa mobil mewah untuk momen spesial pernikahan Anda dengan dekorasi eksklusif.</p>
+                <a href="contact.html" class="service-link">Pesan →</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon-wrap">
+                    <div class="service-icon">⏱️</div>
+                </div>
+                <h3>Sewa Full Day</h3>
+                <p>Fleksibilitas penuh untuk perjalanan bisnis atau keluarga selama 12-24 jam.</p>
+                <a href="contact.html" class="service-link">Pesan →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Process Section -->
+    <section class="steps-section">
+        <div class="section-header">
+            <span class="section-badge">Cara Pesan</span>
+            <h2>3 Langkah Mudah Memesan</h2>
+            <p>Proses pemesanan yang simpel dan cepat</p>
+        </div>
+        <div class="steps-container">
+            <div class="step-item reveal">
+                <div class="step-icon">🚗</div>
+                <div class="step-number">01</div>
+                <h3>Pilih Armada</h3>
+                <p>Cari kendaraan yang sesuai dengan kapasitas dan budget Anda di katalog kami.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item reveal">
+                <div class="step-icon">💬</div>
+                <div class="step-number">02</div>
+                <h3>Hubungi Admin</h3>
+                <p>Konfirmasi ketersediaan via WhatsApp atau telepon dengan tim kami.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item reveal">
+                <div class="step-icon">🎉</div>
+                <div class="step-number">03</div>
+                <h3>Mulai Perjalanan</h3>
+                <p>Selesaikan pembayaran dan armada siap mengantar Anda ke tujuan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Carousel -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <span class="section-badge">Testimoni</span>
+            <h2>Apa Kata Mereka?</h2>
+            <p>Ratusan pelanggan sudah mempercayakan perjalanan mereka kepada kami</p>
+        </div>
+        <div class="testimonial-carousel-wrapper">
+            <div class="testimonial-carousel" id="testimonialCarousel">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Pelayanan sangat ramah dan armada Innova-nya sangat bersih. Perjalanan
+                        keluarga jadi sangat nyaman dan menyenangkan!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AP</div>
+                        <div class="author-info">
+                            <strong>Andi Pratama</strong>
+                            <span>Wisatawan & Keluarga</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Sopirnya hafal jalan tikus, jadi terhindar dari macet. Sangat
+                        profesional untuk urusan bisnis. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <strong>Siti Rahma</strong>
+                            <span>Business Traveler</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Harga transparan dan tidak ada biaya tersembunyi. Mariki Wisata memang
+                        terbaik di Makassar! Sudah 3x pakai."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">BS</div>
+                        <div class="author-info">
+                            <strong>Budi Santoso</strong>
+                            <span>Pelanggan Setia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Alphard-nya mewah banget! Cocok untuk acara pernikahan kami. Dekorasi
+                        juga disediakan. Top service!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DW</div>
+                        <div class="author-info">
+                            <strong>Dewi Wulandari</strong>
+                            <span>Pengantin Bahagia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Antar jemput bandara tepat waktu walau penerbangan delay. Responsif dan
+                        profesional. Terimakasih Mariki!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RF</div>
+                        <div class="author-info">
+                            <strong>Rizal Fauzi</strong>
+                            <span>Frequent Traveler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="carouselPrev">‹</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <button class="carousel-btn next" id="carouselNext">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-header">
+            <span class="section-badge">FAQ</span>
+            <h2>Pertanyaan yang Sering Ditanyakan</h2>
+            <p>Temukan jawaban untuk pertanyaan umum Anda</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span>Apakah sudah termasuk BBM dan Sopir?</span>
+                    <div class="faq-icon">+</div>
+                </div>
+                <div class="faq-answer">Ya, sebagian besar paket kami sudah termasuk layanan sopir ramah dan bahan
+                    bakar. Detail paket bisa dikonfirmasi via WhatsApp.</div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span>Bagaimana cara booking untuk luar kota?</span>
+                    <div class="faq-icon">+</div>
+                </div>
+                <div class="faq-answer">Cukup hubungi admin kami via WhatsApp dan infokan rute tujuan, tanggal
+                    keberangkatan, dan jumlah penumpang. Kami akan segera konfirmasi ketersediaan dan harga.</div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span>Apakah tersedia pengantaran tengah malam?</span>
+                    <div class="faq-icon">+</div>
+                </div>
+                <div class="faq-answer">Kami melayani layanan 24 jam dengan konfirmasi pemesanan sebelumnya. Biaya
+                    tambahan mungkin berlaku untuk layanan di luar jam operasional.</div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span>Berapa lama proses konfirmasi booking?</span>
+                    <div class="faq-icon">+</div>
+                </div>
+                <div class="faq-answer">Konfirmasi biasanya dalam waktu kurang dari 30 menit di jam operasional (08:00 -
+                    22:00 WITA). Di luar jam itu, kami akan merespons di pagi hari.</div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span>Apakah ada kebijakan pembatalan?</span>
+                    <div class="faq-icon">+</div>
+                </div>
+                <div class="faq-answer">Pembatalan H-1 tidak dikenakan biaya. Pembatalan di hari yang sama mungkin
+                    dikenakan biaya administrasi. Hubungi kami untuk detail lebih lanjut.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="home-cta">
+        <div class="cta-inner">
+            <div class="cta-icon">🚀</div>
+            <h2>Siap Memulai Perjalanan?</h2>
+            <p>Hubungi kami sekarang dan dapatkan penawaran terbaik untuk rental kendaraan Anda. Tim kami siap membantu
+                24/7!</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/6281355552851" class="cta-button cta-wa" target="_blank">
+                    💬 WhatsApp Sekarang
+                </a>
+                <a href="catalog.html" class="cta-button cta-outline">
+                    🚗 Lihat Katalog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <div class="footer-container">
+            <div class="footer-section footer-brand-section">
+                <div class="footer-brand">
+                    <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata">
+                    <p>Mitra perjalanan terpercaya di Makassar. Armada berkualitas, pelayanan profesional 24/7.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/6281355552851" target="_blank" title="WhatsApp">📱</a>
+                        <a href="https://www.instagram.com/marikiwisatamakassar/" target="_blank"
+                            title="Instagram">📸</a>
+                        <a href="#" title="Facebook">👍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Lokasi</h4>
+                <ul>
+                    <li>📍 0101 Sudiang</li>
+                    <li>Makassar, Sulawesi Selatan</li>
+                    <li>Indonesia</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>📞 081355552851</li>
+                    <li>✉️ info@marikiwisata.com</li>
+                    <li>📸 @marikiwisatamakassar</li>
+                    <li>🕐 08:00 - 22:00 WITA</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="about.html">ℹ️ About Us</a></li>
+                    <li><a href="catalog.html">🚗 Catalog</a></li>
+                    <li><a href="contact.html">📞 Contact</a></li>
+                    <li><a href="login.php">🔐 Login Admin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Mariki Wisata. All rights reserved. Made with ❤️ in Makassar</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281355552851" class="floating-whatsapp" target="_blank">
+        <img src="logo wa.jpg" alt="WhatsApp Support">
+        <span>Tanya Kami</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Kembali ke atas">↑</button>
+
+    <script>
+        // ====== PRELOADER ======
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('hidden');
+            }, 1200);
+        });
+
+        // ====== SCROLL PROGRESS ======
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('scroll-progress').style.width = progress + '%';
+
+            // Back to top visibility
+            const btn = document.getElementById('back-to-top');
+            if (scrollTop > 400) btn.classList.add('visible');
+            else btn.classList.remove('visible');
+
+            // Navbar scroll style
+            const nav = document.getElementById('main-nav');
+            if (scrollTop > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // ====== BACK TO TOP ======
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
+
+
+        // ====== HAMBURGER MENU ======
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+        navMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('open');
+            });
+        });
+
+        // ====== REVEAL ANIMATIONS ======
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('active'), i * 80);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // ====== ANIMATED STATS COUNTER ======
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.target);
+            const suffix = el.dataset.suffix || '+';
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = Math.floor(current) + suffix;
+            }, 16);
+        }
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.hero-stat-num').forEach(el => animateCounter(el));
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) statsObserver.observe(heroStats);
+
+        // ====== TESTIMONIAL CAROUSEL ======
+        const carousel = document.getElementById('testimonialCarousel');
+        const cards = carousel.querySelectorAll('.testimonial-card');
+        const dotsContainer = document.getElementById('carouselDots');
+        let currentIdx = 0;
+        let autoSlideTimer;
+        let visibleCount = window.innerWidth <= 640 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+
+        window.addEventListener('resize', () => {
+            const newCount = window.innerWidth <= 640 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+            if (newCount !== visibleCount) {
+                visibleCount = newCount;
+                goToSlide(currentIdx);
+            }
+        });
+
+        cards.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        function updateCarousel() {
+            const offset = currentIdx * (100 / visibleCount);
+            carousel.style.transform = `translateX(-${offset}%)`;
+            dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+                d.classList.toggle('active', i === currentIdx);
+            });
+        }
+
+        function goToSlide(idx) {
+            currentIdx = Math.max(0, Math.min(idx, cards.length - visibleCount));
+            updateCarousel();
+            resetAutoSlide();
+        }
+
+        function nextSlide() {
+            currentIdx = (currentIdx + 1) % (cards.length - visibleCount + 1);
+            updateCarousel();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideTimer);
+            autoSlideTimer = setInterval(nextSlide, 4000);
+        }
+
+        document.getElementById('carouselPrev').addEventListener('click', () => {
+            currentIdx = (currentIdx - 1 + cards.length) % cards.length;
+            goToSlide(currentIdx);
+        });
+        document.getElementById('carouselNext').addEventListener('click', () => nextSlide());
+        resetAutoSlide();
+
+        // ====== FAQ ACCORDION ======
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-icon').textContent = '+';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    item.querySelector('.faq-icon').textContent = '−';
+                }
+            });
+        });
+
+        // ====== PARTICLE CANVAS ======
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.6;
+                this.speedY = (Math.random() - 0.5) * 0.6;
+                this.opacity = Math.random() * 0.5 + 0.1;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 220, 180, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            // Draw connections
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 100) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(255, 200, 150, ${0.15 * (1 - dist / 100)})`;
+                        ctx.lineWidth = 0.8;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    </script>
+</body>
+
+</html>

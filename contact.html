@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariki Wisata - Hubungi Kami</title>
+    <meta name="description"
+        content="Hubungi Mariki Wisata untuk rental kendaraan di Makassar. WhatsApp, Instagram, dan form pesan tersedia.">
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Memuat...</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="main-nav">
+        <div class="nav-logo">
+            <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata" width="160px">
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="page-hero-content">
+            <span class="hero-badge">📞 Hubungi Kami</span>
+            <h1>Kami Siap Melayani Anda</h1>
+            <p>Pilih channel komunikasi favorit Anda. Tim kami siap membantu 24 jam sehari, 7 hari seminggu.</p>
+        </div>
+    </section>
+
+    <!-- Channel Cards -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-card reveal">
+                <div class="contact-icon-wrap green">
+                    <img src="logo wa.jpg" alt="WhatsApp">
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Chat langsung dengan tim kami untuk informasi dan pemesanan cepat dan mudah.</p>
+                <span class="contact-detail">081355552851</span>
+                <a href="https://wa.me/6281355552851" class="contact-btn btn-green" target="_blank">💬 Chat Sekarang</a>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-icon-wrap pink">
+                    <img src="instagram logo.jpg" alt="Instagram">
+                </div>
+                <h3>Instagram</h3>
+                <p>Lihat galeri perjalanan dan pengalaman pelanggan kami di Instagram.</p>
+                <span class="contact-detail">@marikiwisatamakassar</span>
+                <a href="https://www.instagram.com/marikiwisatamakassar/" class="contact-btn btn-pink"
+                    target="_blank">📸 Kunjungi</a>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-icon-wrap blue">
+                    <img src="fb logo.jpg" alt="Facebook">
+                </div>
+                <h3>Facebook</h3>
+                <p>Ikuti kami untuk update terbaru, promo menarik, dan info armada terbaru.</p>
+                <span class="contact-detail">Mariki Wisata Makassar</span>
+                <a href="#" class="contact-btn btn-blue">👍 Kunjungi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Send Message Form (WhatsApp Integrated) -->
+    <section class="message-section">
+        <div class="message-wrapper">
+            <div class="message-info reveal">
+                <span class="section-badge">📩 Kirim Pesan</span>
+                <h2>Hubungi Kami Langsung</h2>
+                <p>Isi form di bawah ini dan kami akan segera menghubungi Anda.</p>
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <strong>Alamat</strong>
+                            <span>0101 Sudiang, Makassar, Sulawesi Selatan</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <strong>Telepon</strong>
+                            <span>081355552851</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong>
+                            <span>info@marikiwisata.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <strong>Jam Operasional</strong>
+                            <span>Setiap Hari • 08:00 - 22:00 WITA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-form reveal">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="formName">Nama Lengkap</label>
+                        <input type="text" id="formName" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formPhone">Nomor WhatsApp</label>
+                        <input type="tel" id="formPhone" placeholder="Contoh: 0812xxxxxxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formService">Jenis Layanan</label>
+                        <select id="formService" required>
+                            <option value="">Pilih layanan...</option>
+                            <option value="Antar Jemput Bandara">✈️ Antar Jemput Bandara</option>
+                            <option value="City Tour Makassar">🏙️ City Tour Makassar</option>
+                            <option value="Wedding Car">💍 Wedding Car</option>
+                            <option value="Sewa Full Day">⏱️ Sewa Full Day</option>
+                            <option value="Sewa Harian">🚗 Sewa Harian</option>
+                            <option value="Lainnya">📋 Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formDate">Tanggal Perjalanan</label>
+                        <input type="date" id="formDate">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="formMessage">Pesan</label>
+                        <textarea id="formMessage" rows="4" placeholder="Ceritakan kebutuhan perjalanan Anda..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        💬 Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="info-section">
+        <div class="info-grid">
+            <div class="info-card reveal">
+                <div class="info-icon">📍</div>
+                <h3>Lokasi Kami</h3>
+                <p>0101 Sudiang, Makassar<br>Sulawesi Selatan, Indonesia</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon">⚡</div>
+                <h3>Respons Cepat</h3>
+                <p>Konfirmasi dalam<br>kurang dari 30 menit</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon">🕐</div>
+                <h3>Jam Operasional</h3>
+                <p>Senin — Minggu<br>08:00 — 22:00 WITA</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon">⭐</div>
+                <h3>Rating Kami</h3>
+                <p>5.0/5.0<br>★★★★★ 500+ Review</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Embed -->
+    <section class="maps-section">
+        <div class="maps-header">
+            <span class="section-badge">📍 Lokasi</span>
+            <h2>Temukan Kami di Sini</h2>
+        </div>
+        <div class="maps-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15960.26929428499!2d119.47861014843749!3d-5.098000900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee03a00a76da5%3A0xabc3a7b3d3b888f5!2sSudiang%2C%20Biringkanaya%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                width="100%" height="420" style="border:0; border-radius: 20px;" allowfullscreen loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <div class="footer-container">
+            <div class="footer-section footer-brand-section">
+                <div class="footer-brand">
+                    <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata">
+                    <p>Mitra perjalanan terpercaya di Makassar. Armada berkualitas, pelayanan profesional 24/7.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/6281355552851" target="_blank">📱</a>
+                        <a href="https://www.instagram.com/marikiwisatamakassar/" target="_blank">📸</a>
+                        <a href="#">👍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Lokasi</h4>
+                <ul>
+                    <li>📍 0101 Sudiang</li>
+                    <li>Makassar, Sulawesi Selatan</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>📞 081355552851</li>
+                    <li>✉️ info@marikiwisata.com</li>
+                    <li>📸 @marikiwisatamakassar</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="about.html">ℹ️ About</a></li>
+                    <li><a href="catalog.html">🚗 Catalog</a></li>
+                    <li><a href="contact.html">📞 Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Mariki Wisata. All rights reserved. Made with ❤️ in Makassar</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281355552851" class="floating-whatsapp" target="_blank">
+        <img src="logo wa.jpg" alt="WhatsApp">
+        <span>Tanya Kami</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Kembali ke atas">↑</button>
+
+    <script>
+        window.addEventListener('load', () => setTimeout(() => document.getElementById('preloader').classList.add('hidden'), 1200));
+        window.addEventListener('scroll', () => {
+            const st = document.documentElement.scrollTop;
+            const sh = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById('scroll-progress').style.width = (st / sh * 100) + '%';
+            const btn = document.getElementById('back-to-top');
+            st > 400 ? btn.classList.add('visible') : btn.classList.remove('visible');
+            st > 50 ? document.getElementById('main-nav').classList.add('scrolled') : document.getElementById('main-nav').classList.remove('scrolled');
+        });
+        document.getElementById('back-to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+
+
+
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navMenu.classList.toggle('open'); });
+
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+        // Contact Form → WhatsApp
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const phone = document.getElementById('formPhone').value;
+            const service = document.getElementById('formService').value;
+            const date = document.getElementById('formDate').value;
+            const message = document.getElementById('formMessage').value;
+            const text = `Halo Mariki Wisata! 👋\n\nNama: ${name}\nNo. WhatsApp: ${phone}\nLayanan: ${service}\nTanggal: ${date || 'Belum ditentukan'}\n\nPesan: ${message}\n\nTerima kasih! 🙏`;
+            const waUrl = `https://wa.me/6281355552851?text=${encodeURIComponent(text)}`;
+            window.open(waUrl, '_blank');
+        });
+    </script>
+</body>
+
+</html>

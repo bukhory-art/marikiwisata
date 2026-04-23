@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariki Wisata - Katalog Armada Kendaraan</title>
+    <meta name="description"
+        content="Katalog armada kendaraan Mariki Wisata. Pilih kendaraan terbaik untuk perjalanan Anda di Makassar.">
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Memuat...</div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="">
+                    <span id="modalBadge" class="card-tag"></span>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDesc" class="modal-desc"></p>
+                    <div class="modal-specs" id="modalSpecs"></div>
+                    <div class="modal-actions">
+                        <a id="modalWaLink" href="#" class="modal-btn-wa" target="_blank">💬 Pesan via WhatsApp</a>
+                        <a href="contact.html" class="modal-btn-contact">📞 Hubungi Kami</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="main-nav">
+        <div class="nav-logo">
+            <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata" width="160px">
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="catalog.html" class="active">Catalog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="hero-badge">🚗 Armada Kami</span>
+            <h1>Katalog Kendaraan</h1>
+            <p>Temukan armada yang tepat untuk setiap perjalanan Anda. Kualitas terjamin, harga transparan.</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="catalog-section">
+        <div class="filter-bar">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Cari kendaraan...">
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Semua</button>
+                <button class="filter-tab" data-filter="populer">Populer</button>
+                <button class="filter-tab" data-filter="suv">SUV</button>
+                <button class="filter-tab" data-filter="mpv">MPV</button>
+                <button class="filter-tab" data-filter="premium">Premium</button>
+                <button class="filter-tab" data-filter="ekonomis">Ekonomis</button>
+            </div>
+        </div>
+
+        <!-- Vehicle Count -->
+        <div class="vehicle-count" id="vehicleCount">Menampilkan 8 kendaraan</div>
+
+        <!-- Card Grid -->
+        <div class="card-container" id="catalogGrid">
+            <!-- Innova -->
+            <div class="card" data-category="populer mpv" data-name="innova">
+                <div class="card-image">
+                    <img src="Jepretan-Layar-2024-08-02-pukul-13.40.47-1030x609.png" alt="Innova">
+                    <span class="card-tag">Populer</span>
+                    <button class="quick-view-btn" data-vehicle="0">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Innova</div>
+                    <div class="card-description">Kenyamanan optimal untuk perjalanan keluarga dengan harga terjangkau.
+                    </div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span><span>❄️ AC</span><span>⛽ BBM</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Hiace -->
+            <div class="card" data-category="mpv" data-name="hiace">
+                <div class="card-image">
+                    <img src="hiace.jpg" alt="Hiace">
+                    <span class="card-tag tag-group">Grup</span>
+                    <button class="quick-view-btn" data-vehicle="1">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota HiAce</div>
+                    <div class="card-description">Kapasitas besar untuk perjalanan kelompok yang nyaman dan
+                        menyenangkan.</div>
+                    <div class="card-features">
+                        <span>👥 14 Kursi</span><span>❄️ AC</span><span>🗺️ Sopir</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Fortuner -->
+            <div class="card" data-category="suv" data-name="fortuner">
+                <div class="card-image">
+                    <img src="fortuner.jpg" alt="Fortuner">
+                    <span class="card-tag tag-suv">SUV</span>
+                    <button class="quick-view-btn" data-vehicle="2">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Fortuner</div>
+                    <div class="card-description">Tangguh di segala medan, nyaman untuk perjalanan keluarga maupun
+                        bisnis.</div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span><span>❄️ AC</span><span>🛡️ Asuransi</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Pajero -->
+            <div class="card" data-category="suv" data-name="pajero">
+                <div class="card-image">
+                    <img src="pajero.jpg" alt="Pajero">
+                    <span class="card-tag tag-suv">SUV</span>
+                    <button class="quick-view-btn" data-vehicle="3">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Mitsubishi Pajero</div>
+                    <div class="card-description">SUV gagah yang siap melewati segala medan dengan gaya premium.</div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span><span>❄️ AC</span><span>🛡️ Asuransi</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Alphard -->
+            <div class="card" data-category="premium" data-name="alphard">
+                <div class="card-image">
+                    <img src="alphard.jpg" alt="Alphard">
+                    <span class="card-tag tag-premium">Premium</span>
+                    <button class="quick-view-btn" data-vehicle="4">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Alphard</div>
+                    <div class="card-description">Kendaraan VIP mewah untuk perjalanan eksklusif, wedding, dan acara
+                        spesial.</div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span><span>❄️ AC Dual</span><span>⭐ VIP</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Zenix -->
+            <div class="card" data-category="mpv premium" data-name="zenix">
+                <div class="card-image">
+                    <img src="zenix.jpg" alt="Zenix">
+                    <span class="card-tag tag-premium">Premium</span>
+                    <button class="quick-view-btn" data-vehicle="5">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Zenix</div>
+                    <div class="card-description">Mewah di setiap momen, memberikan pengalaman berkendara kelas satu.
+                    </div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span><span>❄️ AC</span><span>🛡️ Asuransi</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Avanza -->
+            <div class="card" data-category="populer mpv ekonomis" data-name="avanza">
+                <div class="card-image">
+                    <img src="avanza.jpg" alt="Avanza">
+                    <span class="card-tag tag-eco">Ekonomis</span>
+                    <button class="quick-view-btn" data-vehicle="6">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Avanza</div>
+                    <div class="card-description">Responsif di kota dan nyaman di perjalanan jauh dengan harga
+                        bersahabat.</div>
+                    <div class="card-features">
+                        <span>👥 7 Kursi</span><span>❄️ AC</span><span>⛽ BBM</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <!-- Agya -->
+            <div class="card" data-category="ekonomis" data-name="agya">
+                <div class="card-image">
+                    <img src="agya.png" alt="Agya">
+                    <span class="card-tag tag-eco">Ekonomis</span>
+                    <button class="quick-view-btn" data-vehicle="7">👁️ Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-tittle">Toyota Agya</div>
+                    <div class="card-description">Compact dan stylish, partner sempurna untuk mobilitas sehari-hari di
+                        kota.</div>
+                    <div class="card-features">
+                        <span>👥 4 Kursi</span><span>❄️ AC</span><span>🌿 Irit BBM</span>
+                    </div>
+                    <a href="contact.html" class="card-btn">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Result -->
+        <div class="no-result" id="noResult">
+            <div class="no-result-icon">🔍</div>
+            <h3>Kendaraan tidak ditemukan</h3>
+            <p>Coba kata kunci atau filter lain</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="catalog-cta">
+        <div class="cta-inner">
+            <h2>Tidak Menemukan Yang Anda Cari?</h2>
+            <p>Hubungi kami langsung untuk informasi armada lainnya atau permintaan khusus.</p>
+            <a href="https://wa.me/6281355552851" class="cta-button cta-wa" target="_blank">💬 Tanya via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <div class="footer-container">
+            <div class="footer-section footer-brand-section">
+                <div class="footer-brand">
+                    <img src="LOGO MARIKI 2_PNG.png" alt="Mariki Wisata">
+                    <p>Mitra perjalanan terpercaya di Makassar. Armada berkualitas, pelayanan profesional 24/7.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/6281355552851" target="_blank">📱</a>
+                        <a href="https://www.instagram.com/marikiwisatamakassar/" target="_blank">📸</a>
+                        <a href="#">👍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Lokasi</h4>
+                <ul>
+                    <li>📍 0101 Sudiang</li>
+                    <li>Makassar, Sulawesi Selatan</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>📞 081355552851</li>
+                    <li>✉️ info@marikiwisata.com</li>
+                    <li>📸 @marikiwisatamakassar</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="about.html">ℹ️ About</a></li>
+                    <li><a href="catalog.html">🚗 Catalog</a></li>
+                    <li><a href="contact.html">📞 Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Mariki Wisata. All rights reserved. Made with ❤️ in Makassar</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281355552851" class="floating-whatsapp" target="_blank">
+        <img src="logo wa.jpg" alt="WhatsApp">
+        <span>Tanya Kami</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Kembali ke atas">↑</button>
+
+    <script>
+        // Vehicle data for quick view
+        const vehicles = [
+            {
+                name: "Toyota Innova", img: "Jepretan-Layar-2024-08-02-pukul-13.40.47-1030x609.png",
+                badge: "Populer", badgeClass: "",
+                desc: "Toyota Innova memberikan kenyamanan optimal untuk perjalanan keluarga dengan kabin yang luas dan fitur modern. Cocok untuk perjalanan wisata, antar jemput bandara, maupun sewa harian.",
+                specs: ["👥 7 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "📅 Min. 8 Jam"]
+            },
+            {
+                name: "Toyota HiAce", img: "hiace.jpg",
+                badge: "Grup", badgeClass: "tag-group",
+                desc: "Toyota HiAce adalah pilihan terbaik untuk perjalanan kelompok. Dengan kapasitas 14 penumpang, semua anggota rombongan bisa duduk nyaman dalam satu kendaraan.",
+                specs: ["👥 14 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "📅 Min. 8 Jam"]
+            },
+            {
+                name: "Toyota Fortuner", img: "fortuner.jpg",
+                badge: "SUV", badgeClass: "tag-suv",
+                desc: "Toyota Fortuner adalah SUV tangguh yang mampu melewati berbagai jenis medan. Cocok untuk petualangan ke pegunungan, perjalanan bisnis, atau wisata alam.",
+                specs: ["👥 7 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "🏔️ Off-Road Ready"]
+            },
+            {
+                name: "Mitsubishi Pajero", img: "pajero.jpg",
+                badge: "SUV", badgeClass: "tag-suv",
+                desc: "Mitsubishi Pajero Sport hadir dengan perpaduan sempurna antara ketangguhan off-road dan kenyamanan premium. Ideal untuk trekking, safari, atau perjalanan jauh.",
+                specs: ["👥 7 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "🏔️ All-Terrain"]
+            },
+            {
+                name: "Toyota Alphard", img: "alphard.jpg",
+                badge: "Premium", badgeClass: "tag-premium",
+                desc: "Toyota Alphard adalah kendaraan VIP mewah dengan interior berkelas. Tersedia untuk wedding, acara korporat, atau perjalanan eksklusif yang menuntut kemewahan.",
+                specs: ["👥 7 Penumpang", "❄️ AC Dual Zone", "⛽ Include BBM", "🗺️ Sopir Profesional", "⭐ VIP Service", "💍 Wedding Ready"]
+            },
+            {
+                name: "Toyota Zenix", img: "zenix.jpg",
+                badge: "Premium", badgeClass: "tag-premium",
+                desc: "Toyota Zenix menghadirkan kemewahan MPV modern dengan teknologi terkini. Kabin luas, suspensi halus, dan fitur keselamatan canggih untuk kenyamanan optimal.",
+                specs: ["👥 7 Penumpang", "❄️ AC Dual", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "🎵 Audio System"]
+            },
+            {
+                name: "Toyota Avanza", img: "avanza.jpg",
+                badge: "Ekonomis", badgeClass: "tag-eco",
+                desc: "Toyota Avanza adalah MPV favorit keluarga Indonesia. Lincah di kota, nyaman di jalan panjang, dengan harga sewa yang sangat terjangkau.",
+                specs: ["👥 7 Penumpang", "❄️ AC", "⛽ Include BBM", "🗺️ Include Sopir", "💰 Harga Terjangkau", "📅 Fleksibel"]
+            },
+            {
+                name: "Toyota Agya", img: "agya.png",
+                badge: "Ekonomis", badgeClass: "tag-eco",
+                desc: "Toyota Agya adalah city car compact yang sempurna untuk mobilitas harian. Irit bahan bakar, mudah parkir, dan ideal untuk perjalanan solo atau pasangan.",
+                specs: ["👥 4 Penumpang", "❄️ AC", "🌿 Irit BBM", "🏙️ Cocok Kota", "💰 Harga Hemat", "📅 Harian/Mingguan"]
+            }
+        ];
+
+        // Preloader
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('preloader').classList.add('hidden'), 1200);
+        });
+
+        // Scroll Progress
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById('scroll-progress').style.width = (scrollTop / scrollHeight * 100) + '%';
+            const btn = document.getElementById('back-to-top');
+            scrollTop > 400 ? btn.classList.add('visible') : btn.classList.remove('visible');
+            const nav = document.getElementById('main-nav');
+            scrollTop > 50 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
+        });
+
+        document.getElementById('back-to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+
+
+
+        // Hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+
+        // Filter + Search
+        const tabs = document.querySelectorAll('.filter-tab');
+        const cards = document.querySelectorAll('#catalogGrid .card');
+        const searchInput = document.getElementById('searchInput');
+        const noResult = document.getElementById('noResult');
+        const vehicleCount = document.getElementById('vehicleCount');
+        let activeFilter = 'all';
+
+        function updateCards() {
+            const search = searchInput.value.toLowerCase().trim();
+            let visible = 0;
+            cards.forEach(card => {
+                const cats = card.dataset.category || '';
+                const name = card.dataset.name || '';
+                const matchFilter = activeFilter === 'all' || cats.includes(activeFilter);
+                const matchSearch = !search || name.includes(search) || card.querySelector('.card-tittle').textContent.toLowerCase().includes(search);
+                const show = matchFilter && matchSearch;
+                card.style.display = show ? 'flex' : 'none';
+                card.style.opacity = show ? '1' : '0';
+                if (show) visible++;
+            });
+            noResult.style.display = visible === 0 ? 'block' : 'none';
+            vehicleCount.textContent = `Menampilkan ${visible} kendaraan`;
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                activeFilter = tab.dataset.filter;
+                updateCards();
+            });
+        });
+
+        searchInput.addEventListener('input', updateCards);
+
+        // Quick View Modal
+        const modal = document.getElementById('quickViewModal');
+        const modalClose = document.getElementById('modalClose');
+
+        document.querySelectorAll('.quick-view-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const idx = parseInt(btn.dataset.vehicle);
+                const v = vehicles[idx];
+                document.getElementById('modalImg').src = v.img;
+                document.getElementById('modalTitle').textContent = v.name;
+                document.getElementById('modalDesc').textContent = v.desc;
+                const badge = document.getElementById('modalBadge');
+                badge.textContent = v.badge;
+                badge.className = 'card-tag ' + (v.badgeClass || '');
+                const specs = document.getElementById('modalSpecs');
+                specs.innerHTML = v.specs.map(s => `<span class="spec-chip">${s}</span>`).join('');
+                document.getElementById('modalWaLink').href = `https://wa.me/6281355552851?text=Halo, saya ingin menyewa ${v.name}.`;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    </script>
+</body>
+
+</html>
