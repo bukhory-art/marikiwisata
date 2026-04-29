@@ -37,6 +37,7 @@
                 </div>
                 <div class="modal-info">
                     <h2 id="modalTitle"></h2>
+                    <div class="modal-price" id="modalPrice"></div>
                     <p id="modalDesc" class="modal-desc"></p>
                     <div class="modal-specs" id="modalSpecs"></div>
                     <div class="modal-actions">
@@ -105,6 +106,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota Innova</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 500.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Kenyamanan optimal untuk perjalanan keluarga dengan harga terjangkau.
                     </div>
                     <div class="card-features">
@@ -122,6 +124,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota HiAce</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 1.200.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Kapasitas besar untuk perjalanan kelompok yang nyaman dan
                         menyenangkan.</div>
                     <div class="card-features">
@@ -139,6 +142,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota Fortuner</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 1.000.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Tangguh di segala medan, nyaman untuk perjalanan keluarga maupun
                         bisnis.</div>
                     <div class="card-features">
@@ -156,6 +160,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Mitsubishi Pajero</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 1.000.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">SUV gagah yang siap melewati segala medan dengan gaya premium.</div>
                     <div class="card-features">
                         <span>👥 7 Kursi</span><span>❄️ AC</span><span>🛡️ Asuransi</span>
@@ -172,6 +177,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota Alphard</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 2.500.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Kendaraan VIP mewah untuk perjalanan eksklusif, wedding, dan acara
                         spesial.</div>
                     <div class="card-features">
@@ -189,6 +195,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota Zenix</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 700.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Mewah di setiap momen, memberikan pengalaman berkendara kelas satu.
                     </div>
                     <div class="card-features">
@@ -206,6 +213,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota Avanza</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 350.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Responsif di kota dan nyaman di perjalanan jauh dengan harga
                         bersahabat.</div>
                     <div class="card-features">
@@ -223,6 +231,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-tittle">Toyota Agya</div>
+                    <div class="card-price"><span class="price-label">Mulai</span> <span class="price-value">Rp 250.000</span><span class="price-unit">/hari</span></div>
                     <div class="card-description">Compact dan stylish, partner sempurna untuk mobilitas sehari-hari di
                         kota.</div>
                     <div class="card-features">
@@ -238,6 +247,188 @@
             <div class="no-result-icon">🔍</div>
             <h3>Kendaraan tidak ditemukan</h3>
             <p>Coba kata kunci atau filter lain</p>
+        </div>
+    </section>
+
+    <!-- Pricing Table Section -->
+    <section class="pricing-section">
+        <div class="section-header">
+            <span class="section-badge">💰 Daftar Harga</span>
+            <h2>Harga Sewa Kendaraan</h2>
+            <p>Harga transparan tanpa biaya tersembunyi. Semua paket sudah termasuk sopir & BBM.</p>
+        </div>
+        <div class="pricing-table-wrapper">
+            <table class="pricing-table" id="pricingTable">
+                <thead>
+                    <tr>
+                        <th>Kendaraan</th>
+                        <th>Kategori</th>
+                        <th>Kapasitas</th>
+                        <th>Harga / Hari</th>
+                        <th>Termasuk</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="agya.png" alt="Agya">
+                                <span>Toyota Agya</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-eco">Ekonomis</span></td>
+                        <td data-label="Kapasitas">👥 4 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 250.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>❄️ AC</span>
+                                <span>🌿 Irit BBM</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20Agya." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="avanza.jpg" alt="Avanza">
+                                <span>Toyota Avanza</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-eco">Ekonomis</span></td>
+                        <td data-label="Kapasitas">👥 7 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 350.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20Avanza." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="Jepretan-Layar-2024-08-02-pukul-13.40.47-1030x609.png" alt="Innova">
+                                <span>Toyota Innova</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-populer">Populer</span></td>
+                        <td data-label="Kapasitas">👥 7 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 500.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir</span>
+                                <span>🛡️ Asuransi</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20Innova." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="zenix.jpg" alt="Zenix">
+                                <span>Toyota Zenix</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-premium">Premium</span></td>
+                        <td data-label="Kapasitas">👥 7 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 700.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir</span>
+                                <span>🛡️ Asuransi</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20Zenix." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="fortuner.jpg" alt="Fortuner">
+                                <span>Toyota Fortuner</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-suv">SUV</span></td>
+                        <td data-label="Kapasitas">👥 7 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 1.000.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir</span>
+                                <span>🛡️ Asuransi</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20Fortuner." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="pajero.jpg" alt="Pajero">
+                                <span>Mitsubishi Pajero</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-suv">SUV</span></td>
+                        <td data-label="Kapasitas">👥 7 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 1.000.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir</span>
+                                <span>🛡️ Asuransi</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Mitsubishi%20Pajero." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="hiace.jpg" alt="HiAce">
+                                <span>Toyota HiAce</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-group">Grup</span></td>
+                        <td data-label="Kapasitas">👥 14 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price">Rp 1.200.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir</span>
+                                <span>🛡️ Asuransi</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20HiAce." class="table-btn" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                    <tr class="reveal highlight-row">
+                        <td data-label="Kendaraan">
+                            <div class="vehicle-name">
+                                <img src="alphard.jpg" alt="Alphard">
+                                <span>Toyota Alphard</span>
+                            </div>
+                        </td>
+                        <td data-label="Kategori"><span class="category-badge badge-premium">Premium</span></td>
+                        <td data-label="Kapasitas">👥 7 Orang</td>
+                        <td data-label="Harga / Hari"><span class="table-price price-premium">Rp 2.500.000</span></td>
+                        <td data-label="Termasuk">
+                            <div class="includes-list">
+                                <span>⛽ BBM</span>
+                                <span>🗺️ Sopir Pro</span>
+                                <span>⭐ VIP</span>
+                                <span>💍 Wedding</span>
+                            </div>
+                        </td>
+                        <td data-label="Aksi"><a href="https://wa.me/6281355552851?text=Halo,%20saya%20ingin%20menyewa%20Toyota%20Alphard." class="table-btn btn-premium" target="_blank">💬 Pesan</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pricing-note">
+            <div class="note-icon">ℹ️</div>
+            <div class="note-content">
+                <strong>Catatan:</strong> Harga dapat berubah sewaktu-waktu. Harga di atas adalah harga dasar untuk sewa harian (min. 8 jam) dalam kota Makassar. Untuk perjalanan luar kota atau durasi lebih lama, silakan hubungi kami untuk penawaran khusus.
+            </div>
         </div>
     </section>
 
@@ -313,49 +504,49 @@
         const vehicles = [
             {
                 name: "Toyota Innova", img: "Jepretan-Layar-2024-08-02-pukul-13.40.47-1030x609.png",
-                badge: "Populer", badgeClass: "",
+                badge: "Populer", badgeClass: "", price: "Rp 500.000",
                 desc: "Toyota Innova memberikan kenyamanan optimal untuk perjalanan keluarga dengan kabin yang luas dan fitur modern. Cocok untuk perjalanan wisata, antar jemput bandara, maupun sewa harian.",
                 specs: ["👥 7 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "📅 Min. 8 Jam"]
             },
             {
                 name: "Toyota HiAce", img: "hiace.jpg",
-                badge: "Grup", badgeClass: "tag-group",
+                badge: "Grup", badgeClass: "tag-group", price: "Rp 1.200.000",
                 desc: "Toyota HiAce adalah pilihan terbaik untuk perjalanan kelompok. Dengan kapasitas 14 penumpang, semua anggota rombongan bisa duduk nyaman dalam satu kendaraan.",
                 specs: ["👥 14 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "📅 Min. 8 Jam"]
             },
             {
                 name: "Toyota Fortuner", img: "fortuner.jpg",
-                badge: "SUV", badgeClass: "tag-suv",
+                badge: "SUV", badgeClass: "tag-suv", price: "Rp 1.000.000",
                 desc: "Toyota Fortuner adalah SUV tangguh yang mampu melewati berbagai jenis medan. Cocok untuk petualangan ke pegunungan, perjalanan bisnis, atau wisata alam.",
                 specs: ["👥 7 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "🏔️ Off-Road Ready"]
             },
             {
                 name: "Mitsubishi Pajero", img: "pajero.jpg",
-                badge: "SUV", badgeClass: "tag-suv",
+                badge: "SUV", badgeClass: "tag-suv", price: "Rp 1.000.000",
                 desc: "Mitsubishi Pajero Sport hadir dengan perpaduan sempurna antara ketangguhan off-road dan kenyamanan premium. Ideal untuk trekking, safari, atau perjalanan jauh.",
                 specs: ["👥 7 Penumpang", "❄️ AC Full", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "🏔️ All-Terrain"]
             },
             {
                 name: "Toyota Alphard", img: "alphard.jpg",
-                badge: "Premium", badgeClass: "tag-premium",
+                badge: "Premium", badgeClass: "tag-premium", price: "Rp 2.500.000",
                 desc: "Toyota Alphard adalah kendaraan VIP mewah dengan interior berkelas. Tersedia untuk wedding, acara korporat, atau perjalanan eksklusif yang menuntut kemewahan.",
                 specs: ["👥 7 Penumpang", "❄️ AC Dual Zone", "⛽ Include BBM", "🗺️ Sopir Profesional", "⭐ VIP Service", "💍 Wedding Ready"]
             },
             {
                 name: "Toyota Zenix", img: "zenix.jpg",
-                badge: "Premium", badgeClass: "tag-premium",
+                badge: "Premium", badgeClass: "tag-premium", price: "Rp 700.000",
                 desc: "Toyota Zenix menghadirkan kemewahan MPV modern dengan teknologi terkini. Kabin luas, suspensi halus, dan fitur keselamatan canggih untuk kenyamanan optimal.",
                 specs: ["👥 7 Penumpang", "❄️ AC Dual", "⛽ Include BBM", "🗺️ Include Sopir", "🛡️ Asuransi", "🎵 Audio System"]
             },
             {
                 name: "Toyota Avanza", img: "avanza.jpg",
-                badge: "Ekonomis", badgeClass: "tag-eco",
+                badge: "Ekonomis", badgeClass: "tag-eco", price: "Rp 350.000",
                 desc: "Toyota Avanza adalah MPV favorit keluarga Indonesia. Lincah di kota, nyaman di jalan panjang, dengan harga sewa yang sangat terjangkau.",
                 specs: ["👥 7 Penumpang", "❄️ AC", "⛽ Include BBM", "🗺️ Include Sopir", "💰 Harga Terjangkau", "📅 Fleksibel"]
             },
             {
                 name: "Toyota Agya", img: "agya.png",
-                badge: "Ekonomis", badgeClass: "tag-eco",
+                badge: "Ekonomis", badgeClass: "tag-eco", price: "Rp 250.000",
                 desc: "Toyota Agya adalah city car compact yang sempurna untuk mobilitas harian. Irit bahan bakar, mudah parkir, dan ideal untuk perjalanan solo atau pasangan.",
                 specs: ["👥 4 Penumpang", "❄️ AC", "🌿 Irit BBM", "🏙️ Cocok Kota", "💰 Harga Hemat", "📅 Harian/Mingguan"]
             }
@@ -437,13 +628,14 @@
                 const v = vehicles[idx];
                 document.getElementById('modalImg').src = v.img;
                 document.getElementById('modalTitle').textContent = v.name;
+                document.getElementById('modalPrice').innerHTML = `<span class="modal-price-label">Mulai</span> <span class="modal-price-value">${v.price}</span><span class="modal-price-unit">/hari</span>`;
                 document.getElementById('modalDesc').textContent = v.desc;
                 const badge = document.getElementById('modalBadge');
                 badge.textContent = v.badge;
                 badge.className = 'card-tag ' + (v.badgeClass || '');
                 const specs = document.getElementById('modalSpecs');
                 specs.innerHTML = v.specs.map(s => `<span class="spec-chip">${s}</span>`).join('');
-                document.getElementById('modalWaLink').href = `https://wa.me/6281355552851?text=Halo, saya ingin menyewa ${v.name}.`;
+                document.getElementById('modalWaLink').href = `https://wa.me/6281355552851?text=Halo, saya ingin menyewa ${v.name}. (${v.price}/hari)`;
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
             });
